@@ -1,7 +1,7 @@
 from tkinter import * 
 import tkinter as t
 import datetime as d
-rt=t.Tk()
+rt=t.Tk()  #main window
 rt.title("DIGITAL CLOCK")
 rt.geometry("500x500")  #SCREENSIZE
 rt.configure(bg="black")
@@ -11,7 +11,6 @@ def now():
     lbl=Label(rt, text=a,bg="grey",fg="black")  #TO DISPLAY OUTPUT
     lbl.pack()
     
-
 btn=t.Button(rt,text='Time',width=20,command=now) #BTN SYNTAX
 btn.pack()
 rt.mainloop()
